@@ -74,7 +74,7 @@ body {
 
 /* LEFT SIDE */
 .hero-left {
-    width: 45%;
+    width: 55%;
 }
 
 .location {
@@ -88,7 +88,7 @@ body {
 }
 
 .hero-left h1 {
-    font-size: 48px;
+    font-size: 60px;
     margin-bottom: 20px;
 }
 
@@ -656,4 +656,4 @@ body {
 
 .app-downloads img {
     height: 40px;
-}
+}na
