@@ -1,37 +1,362 @@
-<!DOCTYPE html>
-<html language = "en">
+\<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset = "UTF-8">
-    <meta name = "viewport" content=" width device,initial-scale = 1.0">
-    <title>Uber | Request a Ride</title>
-</head>
-    <!---Header / Navigation-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uber | Go anywhere</title>
 
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-    <header>
-        <h1>Uber</h1>
-        <nav>
-            <a href = "#">Ride</a>
-            <a href = "#">Drive</a>
-            <a href = "#">Business</a>
-            <a href = "#">Login</a>
-            <a href = "#">Sign Up</a>
-        </nav>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="nav-left">
+            <span class="brand">Uber</span>
+
+            <a href="#">Ride</a>
+            <a href="#">Drive</a>
+            <a href="#">Business</a>
+            <a href="#">About</a>
+        </div>
+
+        <div class="nav-right">
+            <a href="#">EN</a>
+            <a href="#">Help</a>
+            <a href="#">Log in</a>
+            <button class="signup-btn">Sign up</button>
+        </div>
     </header>
 
-    <!---Hero section-->
-    <section>
-        <h2>Go anywhere with Uber</h2>
-        <p>Request ride go anywhere</p>
-        <form>
-            <input type = "text" placeholder = "Enter pickup location">
-            <input type = "text" placeholder = "Enter destination ">
-            <button type = "submit">Request ride</button>
-        </form>
+    <!-- HERO SECTION -->
+    <section class="hero">
+
+        <!-- LEFT CONTENT -->
+        <div class="hero-left">
+            <p class="location">📍 IN · <span>Change city</span></p>
+
+            <h1>Request a ride for now or later</h1>
+
+            <div class="pickup">
+                🕒 Pickup now
+            </div>
+
+            <input type="text" placeholder="Pickup location">
+            <input type="text" placeholder="Dropoff location">
+
+            <div class="actions">
+                <button class="price-btn">See prices</button>
+                <a href="#">Log in to see your recent activity</a>
+            </div>
+        </div>
+
+        <!-- RIGHT IMAGE -->
+        <div class="hero-right">
+            <img src="image/uber-logo.webp" alt="Travel illustration">
+        </div>
+
     </section>
-    <!-- footer -->
-        <footer>
-            <p>&copy; 2025 Uber Technologies Inc.</p>
-        </footer > 
+    <!-- SUGGESTIONS SECTION -->
+<section class="suggestions">
+    <h2>Suggestions</h2>
+
+    <div class="suggestion-cards">
+
+        <div class="card">
+            <div class="card-text">
+                <h3>Ride</h3>
+                <p>Go anywhere with Uber. Request a ride, hop in, and go.</p>
+                <button>Details</button>
+            </div>
+            <img src=".webp" alt="Ride">
+        </div>
+
+        <div class="card">
+            <div class="card-text">
+                <h3>Reserve</h3>
+                <p>Reserve your ride in advance so you can relax on the day of your trip.</p>
+                <button>Details</button>
+            </div>
+            <img src=".webp" alt="Reserve">
+        </div>
+
+        <div class="card">
+            <div class="card-text">
+                <h3>Intercity</h3>
+                <p>Get convenient, affordable outstation cabs anytime.</p>
+                <button>Details</button>
+            </div>
+            <img src=".webp" alt="Intercity">
+        </div>
+
+    </div>
+</section>
+
+<!-- PLAN FOR LATER -->
+<section class="plan">
+    <h2>Plan for later</h2>
+
+    <div class="plan-box">
+        <div class="plan-left">
+            <h3>Get your ride right with Uber Reserve</h3>
+            <p class="sub">Choose date and time</p>
+
+            <div class="date-time">
+                <input type="text" placeholder="Date">
+                <input type="text" placeholder="Time">
+            </div>
+
+            <button class="next-btn">Next</button>
+        </div>
+
+        <div class="plan-right">
+            <h4>Benefits</h4>
+            <ul>
+                <li>Choose your exact pickup time up to 90 days in advance.</li>
+                <li>Extra wait time included to meet your ride.</li>
+                <li>Cancel at no charge up to 60 minutes in advance.</li>
+            </ul>
+            <a href="#">See terms</a>
+        </div>
+    </div>
+</section>
+<!-- GROUP RIDE SECTION -->
+<!-- Add this after the "Plan for later" section -->
+<section class="group-ride">
+    <div class="group-content">
+        <div class="group-left">
+            <div class="group-card">
+                <h3>Brian's group ride</h3>
+                <div class="pickup-order">
+                    <p>Set pickup order</p>
+                    <div class="rider">
+                        <span class="number">1</span>
+                        <span class="name">Brian</span>
+                        <span class="menu">☰</span>
+                    </div>
+                    <div class="rider">
+                        <span class="number">2</span>
+                        <span class="name">Sarah</span>
+                        <span class="menu">☰</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="group-right">
+            <h2>Ride with friends seamlessly</h2>
+            <p>Riding with friends just got easier: set up a group ride in the Uber app, invite your friends, and arrive at your destination. Friends who ride together save together.</p>
+            <a href="#" class="learn-more">Learn more</a>
+        </div>
+    </div>
+</section>
+
+<!-- TRAVEL YOUR WAY SECTION -->
+<section class="travel-way">
+    <h2>Use the Uber app to help you travel your way</h2>
+    
+    <div class="travel-cards">
+        <div class="travel-card">
+            <img src="car.webp" alt="Ride options">
+            <h3>Ride options</h3>
+            <p>There's more than one way to move with Uber, no matter where you are or where you're headed next.</p>
+            <button class="travel-btn">Search ride options</button>
+        </div>
+        
+        <div class="travel-card">
+            <img src="airport.webp" alt="Airports">
+            <h3>700+ airports</h3>
+            <p>You can request a ride to and from most major airports. Schedule a ride to the airport for one less thing to worry about.</p>
+            <button class="travel-btn">Search airports</button>
+        </div>
+        
+        <div class="travel-card">
+            <img src="city.webp" alt="Cities">
+            <h3>15,000+ cities</h3>
+            <p>The app is available in thousands of cities worldwide, so you can request a ride even when you're far from home.</p>
+            <button class="travel-btn">Search cities</button>
+        </div>
+    </div>
+</section>
+
+<!-- BUSINESS SOLUTIONS SECTION -->
+<section class="business-solutions">
+    <div class="business-content">
+        <div class="business-left">
+            <h2>Looking for business solutions?</h2>
+            <p>Get information about how companies leverage <a href="#">Uber for Business</a>:</p>
+            <ul>
+                <li><a href="#">Business travel</a></li>
+                <li><a href="#">Courtesy rides</a></li>
+                <li><a href="#">Meal programs</a></li>
+                <li><a href="#">Item delivery</a></li>
+            </ul>
+            <div class="business-buttons">
+                <button class="get-started">Get started</button>
+                <button class="check-solutions">Check out our solutions</button>
+            </div>
+        </div>
+        
+        <div class="business-right">
+            <img src="business.webp" alt="Business solutions">
+        </div>
+    </div>
+</section>
+
+<!-- FAQ SECTION -->
+<section class="faq">
+    <h2>Frequently asked questions</h2>
+    
+    <div class="faq-item">
+        <div class="faq-question">
+            <span>Can I have a lost item delivered to me?</span>
+            <span class="toggle">^</span>
+        </div>
+        <div class="faq-answer">
+            <p>The Uber app helps provide a delivery solution that can save you a trip across town, whether it's for a last-minute birthday gift or your forgotten keys. Just choose Package in the Uber app.</p>
+            <a href="#">Get details</a>
+        </div>
+    </div>
+    
+    <div class="faq-item">
+        <div class="faq-question">
+            <span>Can I rent a car using Uber?</span>
+            <span class="toggle">^</span>
+        </div>
+        <div class="faq-answer">
+            <p>Yes. <a href="#">Find out more</a> about how car rentals work.</p>
+        </div>
+    </div>
+    
+    <div class="faq-item">
+        <div class="faq-question">
+            <span>Can I request a ride that picks up friends in different locations?</span>
+            <span class="toggle">^</span>
+        </div>
+        <div class="faq-answer">
+            <p>Yes. Set up a group ride in the Uber app, invite your friends, and arrive at your destination together.</p>
+            <a href="#">Learn more</a>
+        </div>
+    </div>
+    
+    <div class="faq-item">
+        <div class="faq-question">
+            <span>Can I request a taxi on Uber?</span>
+            <span class="toggle">^</span>
+        </div>
+        <div class="faq-answer">
+            <p>Uber makes it easy to get a taxi nearby in the cities where Uber Taxi is available. There's no need to find a cab stand, hail a cab on the street, or even call the local cab company. Instead, you can use the Uber app or website to request a taxi in just a few taps or clicks.</p>
+            <a href="#">Learn about requesting a taxi</a>
+        </div>
+    </div>
+    
+    <div class="faq-item">
+        <div class="faq-question">
+            <span>Is there an Uber ride option for 5 people?</span>
+            <span class="toggle">^</span>
+        </div>
+        <div class="faq-answer">
+            <p>Request UberXL for a van or SUV that fits up to 6 people at an affordable price. It's perfect for a family trip or a ride to the airport.</p>
+            <a href="#">Get details about UberXL</a>
+        </div>
+    </div>
+</section>
+
+<!-- PROMO SECTION -->
+<section class="promo">
+    <p>*Join the millions of riders who trust Uber for their everyday travel needs. Get doorstep pickup and dropoff to your chosen destination at the tap of a button. Select from a wide range of affordable options, such as Uber Auto, Uber Moto, and Cabs.</p>
+    
+    <p>Limited-period offer- Discount on first 5 trips (cab or moto) completed within 15 days of signing up. The offer is valid only for first-time users only. The promotion shall apply automatically to eligible rides. Download the Uber app now to request your first ride.</p>
+    
+    <p>Discounts applicable - (i) For cab rides- 25% discount (maximum discount of INR 75 per ride) (ii) For moto rides- 50% discount (maximum discount of INR 50 per ride)</p>
+    
+    <p>This offer cannot be combined with any other offers or promo codes.</p>
+    
+    <p>The offer is non-transferrable and limited to one per user/account.</p>
+    
+    <p>Uber reserves the right to alter, suspend or withdraw the promotion offer in the future in its sole discretion without any prior notice. Terms and conditions apply.</p>
+    
+    <p>Certain requirements and features vary by country, region, and city.</p>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-top">
+            <h3>Uber</h3>
+            <a href="#">Visit Help Center</a>
+        </div>
+        
+        <div class="footer-columns">
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Our offerings</a></li>
+                    <li><a href="#">Newsroom</a></li>
+                    <li><a href="#">Investors</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Uber One</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Products</h4>
+                <ul>
+                    <li><a href="#">Ride</a></li>
+                    <li><a href="#">Drive</a></li>
+                    <li><a href="#">Eat</a></li>
+                    <li><a href="#">Uber for Business</a></li>
+                    <li><a href="#">Uber Freight</a></li>
+                    <li><a href="#">Gift cards</a></li>
+                    <li><a href="#">Uber Health</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Global citizenship</h4>
+                <ul>
+                    <li><a href="#">Safety</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Travel</h4>
+                <ul>
+                    <li><a href="#">Reserve</a></li>
+                    <li><a href="#">Airports</a></li>
+                    <li><a href="#">Cities</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="social-links">
+                <a href="#">LinkedIn</a>
+                <a href="#">YouTube</a>
+                <a href="#">Instagram</a>
+                <a href="#">X</a>
+            </div>
+            
+            <div class="footer-right">
+                <select class="lang-select">
+                    <option>🌐 English</option>
+                </select>
+                <select class="location-select">
+                    <option>📍 San Francisco Bay Area</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="app-downloads">
+            <a href="#"><img src="image/google-play.png" alt="Get it on Google Play"></a>
+            <a href="#"><img src="image/app-store.png" alt="Download on the App Store"></a>
+        </div>
+    </div>
+</footer>
+
+
 </body>
 </html>
