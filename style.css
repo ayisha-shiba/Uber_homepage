@@ -272,76 +272,32 @@ body {
     margin-top: 10px;
     font-size: 14px;
 }
-/* GROUP RIDE SECTION */
+
 .group-ride {
+    display: flex;
+    align-items: center;
+    width: 100%;
     padding: 80px 40px;
-    background-color: #fff;
-}
-
-.group-content {
-    display: flex;
-    align-items: center;
     gap: 60px;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
-.group-left {
-    width: 40%;
-}
-
-.group-card {
-    background-color: #f6f6f6;
-    border-radius: 16px;
-    padding: 30px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-.group-card h3 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.pickup-order p {
-    font-size: 16px;
-    margin-bottom: 15px;
-    font-weight: 600;
-}
-
-.rider {
-    display: flex;
-    align-items: center;
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 8px;
-    margin-bottom: 10px;
-}
-
-.rider .number {
-    width: 30px;
-    height: 30px;
-    background-color: #000;
-    color: #fff;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 15px;
-    font-weight: bold;
-}
-
-.rider .name {
-    flex-grow: 1;
-    font-size: 16px;
-}
-
-.rider .menu {
-    font-size: 20px;
-    cursor: pointer;
-}
-
+.group-ride-section,
 .group-right {
-    width: 60%;
+    flex: 1;
+}
+
+.group-ride-section img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* RIGHT SIDE CONTENT */
+.group-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 40px;
 }
 
 .group-right h2 {
@@ -354,8 +310,9 @@ body {
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 20px;
-    color: #333;
+    color: #000;
 }
+
 
 .learn-more {
     text-decoration: underline;
@@ -656,4 +613,4 @@ body {
 
 .app-downloads img {
     height: 40px;
-}na
+}
