@@ -70,6 +70,13 @@ body {
     font-weight: bold;
     cursor: pointer;
 }
+.ban-left{
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
 
 /* HERO SECTION */
 .hero {
@@ -152,7 +159,7 @@ body {
     max-width: 520px;
     width: 90%;
     max-width: 520px;
-    border-radius: 20px; 
+    border-radius: 15px; 
 }
 /* SUGGESTIONS */
 .suggestions {
@@ -619,7 +626,7 @@ body {
   color: #ccc;
 }
 .social-links a i {
-    font-size: 22px;
+    font-size: 16px;
     color: #fff;  /* match footer text color */
     margin-right: 15px;
 }
@@ -644,13 +651,31 @@ body {
     cursor: pointer;
     font-size: 14px;
 }
-
 .app-downloads {
     display: flex;
     gap: 15px;
+    align-items: center;
     padding-top: 20px;
 }
 
-.app-downloads img {
-    height: 40px;
+.badge-google img,
+.badge-apple img {
+    display: block;
+}
+
+.badge-google img {
+    width: 110px; 
+    height: auto;
+}
+
+.badge-apple img {
+    width: 130px;  
+    height: auto;
+}
+.footer-left{
+    color: #AFAFAF;
+    font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
 }
