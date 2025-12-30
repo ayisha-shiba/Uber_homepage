@@ -1,11 +1,11 @@
-/* RESET */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* BODY */
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #fff;
@@ -15,7 +15,7 @@ body {
     
 }
 
-/* NAVBAR */
+
 .navbar {
     background-color: #000000;
     color: #fff;
@@ -78,14 +78,14 @@ body {
 
 }
 
-/* HERO SECTION */
+
 .hero {
     display: flex;
     padding: 60px 40px;
     
 }
 
-/* LEFT SIDE */
+
 .hero-left {
     width: 55%;
 }
@@ -143,7 +143,7 @@ body {
     color: #000;
 }
 
-/* RIGHT IMAGE */
+
 .hero-right {
     width: 55%;
     display: flex;
@@ -207,7 +207,7 @@ body {
     cursor: pointer;
 }
 
-/* PLAN FOR LATER */
+
 .plan {
     padding: 60px 40px;
 }
@@ -273,7 +273,7 @@ body {
     cursor: pointer;
 }
 
-/* BENEFITS */
+
 .plan-right {
     background-color: #f6f6f6;
     padding: 30px;
@@ -319,7 +319,7 @@ body {
     display: block;
 }
 
-/* RIGHT SIDE CONTENT */
+
 .group-right {
     display: flex;
     flex-direction: column;
@@ -401,7 +401,7 @@ body {
     background-color: #f6f6f6;
 }
 
-/* BUSINESS SOLUTIONS SECTION */
+
 .business-solutions {
     padding: 80px 40px;
     background-color: #000;
@@ -627,12 +627,12 @@ body {
 }
 .social-links a i {
     font-size: 16px;
-    color: #fff;  /* match footer text color */
+    color: #fff;  
     margin-right: 15px;
 }
 
 .social-links a i:hover {
-    color: #ccc;  /* match your hover effect */
+    color: #ccc; 
 }
 
 
